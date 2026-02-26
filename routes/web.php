@@ -136,5 +136,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/daily-logs/{dailyLog}', [DailyLogController::class, 'pembimbingShow'])->name('daily-logs.show');
         Route::post('/daily-logs/{dailyLog}/verify', [DailyLogController::class, 'pembimbingVerify'])->name('daily-logs.verify');
         Route::post('/daily-logs/bulk-verify', [DailyLogController::class, 'pembimbingBulkVerify'])->name('daily-logs.bulk-verify');
-    });
+           Route::post('/daily-logs/bulk-verify1', [DailyLogController::class, 'pembimbingBulkVerify'])->name('daily-logs.bulk-verify');
+
+        });
 });
